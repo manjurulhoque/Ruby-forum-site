@@ -12,9 +12,9 @@
                 <div class="post-body">
                     <p><%= truncate(post.content, length: 100) %></p>
                     <div class="post-meta-details">
-                        <% if false %>
+                        
                         <small>Created by: <%= post.user.username if post.user %></small>
-                         <% end %>
+                        
                         <small>Created at: <%= time_ago_in_words(post.created_at) %> ago</small>
                         <small>Updated at: <%= time_ago_in_words(post.updated_at) %></small>
                     </div>
